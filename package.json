@@ -1,0 +1,19 @@
+{
+  "name": "gemini-llm-cli",
+  "version": "1.0.0",
+  "description": "command line interfacec app using gemini large languange model to talk with AI in terminal",
+  "main": "index.js",
+  "type": "module",
+  "bin": { "chat": "./index.js" },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gemini"
+  ],
+  "author": "VArtzy",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0"
+  }
+}
