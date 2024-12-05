@@ -1,6 +1,6 @@
 # GEMINI on your Terminal
 
-## Command line and coding assistant without ever leaving your terminal
+## FREE and Effective Command line and coding assistant without ever leaving your terminal
 
 ## Installation
 
