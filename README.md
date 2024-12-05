@@ -6,7 +6,12 @@
 
 * Create your [gemini api key](https://aistudio.google.com/apikey)
 * Copy .env.example to .env
+* [Get your API key](https://aistudio.google.com/apikey)
 * Add your API_KEY in .env
-* Change the model you want 
-* npm link
+* Change the model you want
 * run 'chat' on your terminal to start the program
+
+```bash
+chat git push // get direct answer
+chat // talk to gemini in session
+```
