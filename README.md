@@ -9,6 +9,8 @@ npm i -g gemini-llm-cli
 ```
 
 * Create your [gemini api key](https://aistudio.google.com/apikey)
+* Please find your npm directory (windows: AppData/roaming, unix: /usr/local/lib/node_modules) and find gemini-llm-package
+* Chage the first line in the code "index.js" with your .env path
 * Copy .env.example to .env
 * Add your API_KEY in .env
 * Change the model you want
