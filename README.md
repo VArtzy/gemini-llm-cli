@@ -20,3 +20,7 @@ npm i -g gemini-llm-cli
 chat git push // get direct answer
 chat // talk to gemini in session
 ```
+
+## TODO
+
+Automatic .env setting with OS system path variable
