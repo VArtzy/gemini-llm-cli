@@ -5,7 +5,7 @@
 ## Installation
 
 ```bash
-npm i -g gemini-llm-clu
+npm i -g gemini-llm-cli
 ```
 
 * Create your [gemini api key](https://aistudio.google.com/apikey)
