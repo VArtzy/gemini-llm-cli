@@ -1,5 +1,9 @@
 # GEMINI on your Terminal
 
+## Command line and coding assistant without ever leaving your terminal
+
+## Installation
+
 * Create your [gemini api key](https://aistudio.google.com/apikey)
 * Copy .env.example to .env
 * Add your API_KEY in .env
