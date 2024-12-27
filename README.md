@@ -41,12 +41,11 @@ chat
 ```  
 
 ### Tunning and custom system prompt
-Change the ```index.js``` source (using ```which chat``` to easily locate node_modules source file) on line ```22```. Run this command after it
+Open node_modules source file (use ```which chat``` to easier find) and open the main .env file, change the SYSTEM variable to your desired system prompt.
 
 ```bash
-npm link
+SYSTEM="You are helpfull command line assistant"
 ```
-
 
 ## Features  
 

@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-import { writeFileSync } from "fs"
+import { appendFileSync } from "fs"
 import { GoogleGenerativeAI } from "@google/generative-ai"
 import 'dotenv/config'
 
 if (!process.env.API_KEY) {
     process.stdout.write("API_KEY is required, please provide: ")
     process.stdin.on("data", (data) => {
-        writeFileSync(".env", `API_KEY=${data.toString()}`)
+        appendFileSync(".env", `API_KEY=${data.toString()}`)
         process.stdout.write("API_KEY is saved to .env file, let's chatting with `chat`\n")
         process.exit()
     })
@@ -19,7 +19,7 @@ if (!process.env.API_KEY) {
     const args = process.argv.slice(2).join(" ")
 
     async function ask(args) {
-        const system = "You will be provided question mostly about programming, command line and terminal. List command or explain in concise way: " + args
+        const system = process.env.SYSTEM + args
         const res = await chat.sendMessageStream(system)
         for await (const msg of res.stream) {
             process.stdout.write(msg.candidates[0].content.parts[0].text)

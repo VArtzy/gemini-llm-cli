@@ -1,6 +1,6 @@
 {
   "name": "gemini-llm-cli",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "command line interfacec app using gemini large languange model to talk with AI in terminal",
   "main": "index.js",
   "type": "module",
