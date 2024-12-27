@@ -1,6 +1,6 @@
 {
   "name": "gemini-llm-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "command line interfacec app using gemini large languange model to talk with AI in terminal",
   "main": "index.js",
   "type": "module",
@@ -13,6 +13,10 @@
   "keywords": [
     "gemini"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VArtzy/gemini-llm-cli.git"
+  },
   "author": "VArtzy",
   "license": "ISC",
   "dependencies": {
