@@ -24,8 +24,6 @@ npm i -g gemini-llm-cli
 3. **Configure Your API Key**  
    - On your first run, GEMINI will prompt you to enter your API key. Simply paste the key into the prompt, and you’re ready to go!  
 
----
-
 ## Usage  
 
 ### Quick Answers  
@@ -41,8 +39,6 @@ Engage in a full conversation or problem-solving session by launching GEMINI wit
 ```bash  
 chat  
 ```  
-
----
 
 ## Features  
 
