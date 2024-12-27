@@ -40,6 +40,14 @@ Engage in a full conversation or problem-solving session by launching GEMINI wit
 chat  
 ```  
 
+### Tunning and custom system prompt
+Change the ```index.js``` source (using ```which chat``` to easily locate node_modules source file) on line ```22```. Run this command after it
+
+```bash
+npm link
+```
+
+
 ## Features  
 
 - **Seamless Integration**: Access GEMINI directly from your terminal for maximum productivity.  

@@ -1,7 +1,8 @@
-#!/usr/bin/env node --env-file=.env
+#!/usr/bin/env node
 
 import { writeFileSync } from "fs"
 import { GoogleGenerativeAI } from "@google/generative-ai"
+import 'dotenv/config'
 
 if (!process.env.API_KEY) {
     process.stdout.write("API_KEY is required, please provide: ")
@@ -18,7 +19,7 @@ if (!process.env.API_KEY) {
     const args = process.argv.slice(2).join(" ")
 
     async function ask(args) {
-        const system = "You will be provided mostly about terminal, command line and cli command prompt, list command or explain in concise way: " + args
+        const system = "You will be provided question mostly about programming, command line and terminal. List command or explain in concise way: " + args
         const res = await chat.sendMessageStream(system)
         for await (const msg of res.stream) {
             process.stdout.write(msg.candidates[0].content.parts[0].text)
