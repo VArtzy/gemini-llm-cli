@@ -40,6 +40,18 @@ Engage in a full conversation or problem-solving session by launching GEMINI wit
 chat  
 ```  
 
+### Gain Superpowers with pipe  
+
+Find docs, create question to have knowledge-based AI assistant
+```bash  
+(<docs-source> & <question>) | chat
+```  
+
+Example:
+```bash  
+(pip --help & echo How can I see package size?) | chat
+```  
+
 ### Tunning and custom system prompt
 Open node_modules source file (use ```which chat``` to easier find) and open the main .env file, change the SYSTEM variable to your desired system prompt.
 
@@ -49,6 +61,7 @@ SYSTEM="You are helpfull command line assistant"
 
 ## Features  
 
+- **Chat Session**: Remember context and previous chat history
 - **Seamless Integration**: Access GEMINI directly from your terminal for maximum productivity.  
 - **Quick Queries**: Instantly retrieve answers without disrupting your workflow.  
 - **Interactive Sessions**: Solve complex problems or ask detailed questions in a chat format.  

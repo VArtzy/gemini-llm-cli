@@ -17,13 +17,19 @@ if (!process.env.API_KEY) {
     const chat = model.startChat({})
 
     const args = process.argv.slice(2).join(" ")
+    const chatHistory = []
 
     async function ask(args) {
-        const system = process.env.SYSTEM + args
+        chatHistory.push('user: ' + args)
+        const system = process.env.SYSTEM + chatHistory.join('\n\n')
         const res = await chat.sendMessageStream(system)
-        for await (const msg of res.stream) {
-            process.stdout.write(msg.candidates[0].content.parts[0].text)
+        let assist = ''
+        for await (let msg of res.stream) {
+            msg = msg.candidates[0].content.parts[0].text
+            process.stdout.write(msg)
+            assist += msg
         }
+        chatHistory.push('system: ' + assist)
     }
 
     if (args) {
